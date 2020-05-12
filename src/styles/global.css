@@ -1,0 +1,21 @@
+h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 85px;
+    line-height: 104px;
+}
+
+.sectionHeader {
+    display: table;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.sectionHeader:after {
+    border-bottom: 2px solid #E12F64;
+    content: '';
+    display: block;
+    padding-top: 31px;
+    width: 52px;
+}
