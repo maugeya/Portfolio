@@ -12,8 +12,10 @@ const Navbar = () => {
                     <AnchorLink className={navStyles.navLink} to="/#aboutMe">ABOUT</AnchorLink>
                 </li>
                 <li className={navStyles.navLinkListItem}>
-                    <AnchorLink className={navStyles.navLink} to="/#projects">PROJECTS</AnchorLink>
-                    </li>
+                    <AnchorLink className={navStyles.navSubMenu} to="/#projects">
+                        PROJECTS
+                    </AnchorLink>
+                </li>
                 <li className={navStyles.navLinkListItem}>
                     <AnchorLink className={navStyles.navLink} to="/#contact">CONTACT</AnchorLink>
                 </li>

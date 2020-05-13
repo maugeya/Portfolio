@@ -27,7 +27,7 @@
     margin: 0;
 }
 
-.navLink {
+.navLink, .navSubMenu {
     color: inherit;
     text-decoration: none;
 }
