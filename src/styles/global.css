@@ -5,6 +5,10 @@ h1 {
     line-height: 104px;
 }
 
+.section {
+    height: 100vh;
+}
+
 .sectionHeader {
     display: table;
     font-weight: 600;
