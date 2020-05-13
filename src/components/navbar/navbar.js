@@ -6,7 +6,9 @@ import navStyles from "./navbar.module.css"
 const Navbar = () => {
     return (
         <div className={navStyles.navbar}>
-            <div>LOGO</div>
+            <div>
+                <AnchorLink to="/#jumbo">LOGO</AnchorLink>
+            </div>
             <ul className={navStyles.navLinkList}>
                 <li className={navStyles.navLinkListItem}>
                     <AnchorLink className={navStyles.navLink} to="/#aboutMe">ABOUT</AnchorLink>
