@@ -17,6 +17,34 @@ const Navbar = () => {
                     <AnchorLink className={navStyles.navSubMenu} to="/#projects">
                         PROJECTS
                     </AnchorLink>
+                    <ul className={navStyles.subMenu}>
+                        <li className={navStyles.subMenuListItems}>
+                            <AnchorLink className={navStyles.navSubMenu} to="/project-1">
+                                LGBT Clinic Search
+                            </AnchorLink>
+                        </li>
+
+                        <li className={navStyles.subMenuListItems}>
+                            <AnchorLink className={navStyles.navSubMenu} to="/project-2">
+                                Project 2
+                            </AnchorLink>
+                        </li>
+                        <li className={navStyles.subMenuListItems}>
+                            <AnchorLink className={navStyles.navSubMenu} to="/project-3">
+                                Project 3
+                            </AnchorLink>
+                        </li>
+                        <li className={navStyles.subMenuListItems}>
+                            <AnchorLink className={navStyles.navSubMenu} to="/project-4">
+                                Project 4
+                            </AnchorLink>
+                        </li>
+                        <li className={navStyles.subMenuListItems}>
+                            <AnchorLink className={navStyles.navSubMenu} to="/project-5">
+                                Project 5
+                            </AnchorLink>
+                        </li>
+                    </ul>
                 </li>
                 <li className={navStyles.navLinkListItem}>
                     <AnchorLink className={navStyles.navLink} to="/#contact">CONTACT</AnchorLink>
