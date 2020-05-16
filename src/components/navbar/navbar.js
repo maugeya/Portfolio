@@ -1,14 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import navStyles from "./navbar.module.css"
+import HamburgerMenu from "../burger/burger"
 
 const Navbar = () => {
     return (
         <div className={navStyles.navbar}>
-            <div>
-                <AnchorLink to="/#jumbo">LOGO</AnchorLink>
-            </div>
+            <AnchorLink to="/#jumbo">
+                <div>LOGO</div>
+            </AnchorLink>
+            <HamburgerMenu />
             <ul className={navStyles.navLinkList}>
                 <li className={navStyles.navLinkListItem}>
                     <AnchorLink className={navStyles.navLink} to="/#aboutMe">ABOUT</AnchorLink>
@@ -52,6 +53,7 @@ const Navbar = () => {
             </ul>
         </div>
     )
+    
 }
 
 export default Navbar
