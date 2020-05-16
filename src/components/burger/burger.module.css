@@ -89,6 +89,7 @@ input ~ nav {
     line-height: 1.8rem;
 }
 
+.burgerSubMenuLink,
 .burgerListLink {
     text-decoration: none;
     text-transform: uppercase;
