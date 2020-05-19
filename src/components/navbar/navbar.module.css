@@ -45,12 +45,15 @@
 
 .subMenu {
     background: rgba(255, 255, 255, 0.9);
-    display: none;
     list-style: none;
     margin: 0;
     position: absolute;
     left: 70%;
     top: 100px;
+}
+
+.subMenuHidden {
+    display: none;
 }
 
 .navLinkListItem:hover > ul {
@@ -70,8 +73,33 @@
     background: rgb(0, 0, 0, 0.02);
 }
 
+.triangleIconContainer {
+    position: relative;
+}
+
+.triangleIcon,
+.activeTriangleIcon {
+    background-image: url('../../images/polygon1.png');
+    background-position: center;
+    background-repeat: no-repeat;   
+    margin-left: 11px;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+}
+
+.activeTriangleIcon {
+    transform:rotate(180deg);
+}
+
+
+
+.projectLinkContainer {
+    display: flex;
+}
+
 @media only screen and (max-width: 600px) {
     .navLinkList {
       display: none;
     }
-  }
+}
