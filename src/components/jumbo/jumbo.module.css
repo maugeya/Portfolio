@@ -1,0 +1,17 @@
+.jumboContainer {
+    display: flex;
+}
+
+.jumboText {
+    margin-right: -30%;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+.angeBackgroundImg {
+    background-image: url("../../images/ange_field.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 685px;
+    width: 100%;
+}
