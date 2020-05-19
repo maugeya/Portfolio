@@ -11,7 +11,9 @@
     z-index: 5;
 }
 
-span {
+.burgerSpanFirst,
+.burgerSpanSecond,
+.burgerSpanLast {
     position: absolute;
     width: 100%;
     height: 2px;
@@ -23,11 +25,11 @@ span {
     transition: .5s;
 }
 
-span:first-child {
+.burgerSpanFirst {
     top: 3px; 
 }
 
-span:last-child {
+.burgerSpanLast {
     top: 16px; 
 }
 
@@ -40,12 +42,12 @@ input:checked + label span {
     top: 50%;
 }
 
-input:checked + label span:first-child {
+input:checked + label .burgerSpanFirst {
     opacity: 1;
     transform: rotate(405deg);
 }
 
-input:checked + label span:last-child {
+input:checked + label .burgerSpanLast {
     opacity: 1;
     transform: rotate(-405deg);
 }
