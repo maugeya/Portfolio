@@ -1,0 +1,8 @@
+.techContainer {
+    flex: 0 0 50%;
+}
+
+.techIconContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
