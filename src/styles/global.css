@@ -23,3 +23,8 @@ h1 {
     padding-top: 31px;
     width: 52px;
 }
+
+.personalInfo {
+    display: flex;
+    justify-content: space-between;
+}
