@@ -1,3 +1,11 @@
 .container {
     color: green;
 }
+
+.aboutMeContainer {
+    flex: 0 0 50%;
+}
+
+.content {
+    padding-right: 50px;
+}
