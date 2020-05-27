@@ -9,9 +9,13 @@
 }
 
 .angeBackgroundImg {
-    background-image: url("../../images/ange_field.jpg");
+    background-image: url("../../images/ange_field_new.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 685px;
+    height: 720px;
     width: 100%;
+}
+
+.nameSpan {
+    color: #5A0134;
 }
