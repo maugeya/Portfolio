@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import navStyles from "./navbar.module.css"
 import HamburgerMenu from "../burger/burger"
+import Logo from "../logo/logo"
 
 const Navbar = () => {
     const [subMenuOpen, setSubMenuOpen] = useState(false)
@@ -32,7 +33,7 @@ const Navbar = () => {
     return (
         <div className={navStyles.navbar}>
             <AnchorLink to="/#jumbo">
-                <div>LOGO</div>
+                <Logo />
             </AnchorLink>
             <HamburgerMenu />
             <ul className={navStyles.navLinkList}>
