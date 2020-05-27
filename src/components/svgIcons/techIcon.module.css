@@ -1,0 +1,12 @@
+.techIconSvg {
+    height: 61px;
+    width: 61px;
+}
+
+.techIconPath {
+    fill: #5E5E5E;
+}
+
+.iconContainer {
+    padding: 10px;
+}
