@@ -9,6 +9,7 @@ import DockerIcon from "../svgIcons/dockerIcon"
 import JavaScriptIcon from "../svgIcons/javascriptIcon"
 import ReactIcon from "../svgIcons/reactIcon"
 import ReduxIcon from "../svgIcons/reduxIcon"
+import ReduxSagaIcon from "../svgIcons/reduxSagaIcon"
 import DjangoIcon from "../svgIcons/djangoIcon"
 import GraphQLIcon from "../svgIcons/graphQLIcon"
 import JestIcon from "../svgIcons/jestIcon"
@@ -27,6 +28,7 @@ const TechExperience = () => {
             <JqueryIcon />
             <ReactIcon />
             <ReduxIcon />
+            <ReduxSagaIcon />
             <PythonIcon />
             <DjangoIcon />
             <GraphQLIcon />
