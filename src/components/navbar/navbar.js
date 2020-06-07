@@ -6,7 +6,6 @@ import Logo from "../logo/logo"
 
 const Navbar = () => {
     const [subMenuOpen, setSubMenuOpen] = useState(false)
-    console.log(subMenuOpen)
 
     const handleSubMenuOpen = () => {
         setSubMenuOpen(true)
