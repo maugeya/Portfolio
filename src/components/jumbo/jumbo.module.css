@@ -11,54 +11,10 @@
     z-index: 1;
 }
 
-.angeImage {
-    margin-left: -100px;
-}
-
 .nameSpan {
     color: #5A0134;
 }
 
-.angeContainer {
-    width: 100%;
-}
-
-.angeBackgroundImg1 {
-    background-image: url("../../images/heroImg/ange_1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 685px;
-    width: 100%;
-}
-
-.angeBackgroundImg2 {
-    background-image: url("../../images/heroImg/ange_2.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 685px;
-    width: 100%;
-}
-
-.angeBackgroundImg3 {
-    background-image: url("../../images/heroImg/ange_3.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 685px;
-    width: 100%;
-}
-
-.angeBackgroundImg4 {
-    background-image: url("../../images/heroImg/ange_4.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 685px;
-    width: 100%;
-}
-
-.angeBackgroundImg5 {
-    background-image: url("../../images/heroImg/ange_5.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 685px;
-    width: 100%;
+.imageContainer {
+    display: flex;
 }
