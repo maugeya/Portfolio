@@ -1,0 +1,8 @@
+.formGroup {
+    margin: 20px 0;
+}
+
+.contactFormInput {
+    border: 0;
+    border-bottom: 2px solid #DB3161;
+}
