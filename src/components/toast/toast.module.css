@@ -1,0 +1,45 @@
+.notificationContainer {
+    font-size: 14px;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.toastItem {
+    border: 2px solid #85db85;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.animateToast {
+    right: -220px;
+    animation: slide 5s forwards;
+}
+
+.bottomRight {
+    bottom: 12px;
+    right: 12px;
+}
+
+.closeButton {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: right;
+}
+
+.toastContent {
+    display: flex;
+}
+
+.toastText {
+    margin-left: 8px;
+}
+
+@keyframes slide {
+    100% {
+        right: 0;
+    }
+}
