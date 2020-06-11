@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useTransition, animated, useSpring } from 'react-spring'
+import { useTransition, animated } from 'react-spring'
 import ange_1 from "../../images/heroImg/ange_1.png"
 import ange_2 from "../../images/heroImg/ange_2.png"
 import ange_3 from "../../images/heroImg/ange_3.png"
