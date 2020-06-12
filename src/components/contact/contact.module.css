@@ -1,8 +1,40 @@
 .formGroup {
-    margin: 20px 0;
+    margin-bottom: 70px;
 }
 
 .contactFormInput {
+    width: 100%;
     border: 0;
     border-bottom: 2px solid #DB3161;
+}
+
+.nameInputRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+input {
+    height: 50px;
+}
+
+label {
+    display: block;
+    width: 45%;
+}
+
+.messageInputLabel {
+    height: 120px;
+    width: 100%;
+}
+
+.formMessageTextArea {
+    border: 2px solid #DB3161;
+    height: 100%;
+    margin-top: 15px;
+    width: 100%;
 }
