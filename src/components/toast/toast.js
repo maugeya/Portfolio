@@ -14,11 +14,12 @@ const Toast = props => {
                         if (toastList.length && list.length) {
                             deleteToast(toastList[0].id)
                         }
-                    }, 5000)
+                    }, 3000)
                     return () => {
                         clearInterval(interval)
                     }
                 }, [toastList, list])
+
         const transitions = useTransition(list, item => item.id, {
             from: { transform: 'translateX(120%)'},
             enter: { 
