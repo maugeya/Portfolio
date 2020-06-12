@@ -5,6 +5,17 @@ h1 {
     line-height: 104px;
 }
 
+h2 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .section {
     height: 100vh;
     margin-bottom: 30px;
