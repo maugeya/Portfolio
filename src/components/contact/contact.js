@@ -49,7 +49,7 @@ export default class Contact extends Component {
                     message: "",
                     toastList: [{
                         id: id,
-                        title: 'Success!',
+                        title: 'success',
                         description: 'Your message has been sent',
                         backgroundColor: '#deffdd',
                         icon: CheckIcon
@@ -76,54 +76,65 @@ export default class Contact extends Component {
     render() {
         return (
             <div id="contact">
+                <div className={contactStyles.sectionHeader}>
+                    <h2>Want to collaborate? Get in touch!</h2>
+                    <p>You can contact me at info@angelamaugey.com, or fill out the form</p>
+                </div>
                 <form id="ajaxForm" onSubmit={this.handleSubmit} action="https://getform.io/f/356d79e0-de69-48fa-9c60-ff0c95294681" method="POST">
                     <div className={contactStyles.formGroup}>
-                        <label>
-                            <input
-                                type="text"
-                                name="firstName"
-                                placeholder="First name"
-                                value={this.state.firstName}
-                                onChange={this.handleInputChange}
-                                className={contactStyles.contactFormInput}
-                            />
-                        </label>
-                        <label>
-                            <input
-                                type="text"
-                                name="lastName"
-                                placeholder="Last name"
-                                value={this.state.lastName}
-                                onChange={this.handleInputChange}
-                                className={contactStyles.contactFormInput}
-                            />
-                        </label>
+                        <div className={contactStyles.nameInputRow}>
+                            <label>
+                                <input
+                                    type="text"
+                                    name="firstName"
+                                    placeholder="First name"
+                                    value={this.state.firstName}
+                                    onChange={this.handleInputChange}
+                                    className={contactStyles.contactFormInput}
+                                />
+                            </label>
+                            <label>
+                                <input
+                                    type="text"
+                                    name="lastName"
+                                    placeholder="Last name"
+                                    value={this.state.lastName}
+                                    onChange={this.handleInputChange}
+                                    className={contactStyles.contactFormInput}
+                                />
+                            </label>
+                        </div>
                     </div>
                     <div className={contactStyles.formGroup}>
-                        <label>
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Email"
-                                value={this.state.email}
-                                onChange={this.handleInputChange}
-                                className={contactStyles.contactFormInput}
-                            />
-                        </label>
+                        <div className={contactStyles.emailInputRow}>
+                            <label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    value={this.state.email}
+                                    onChange={this.handleInputChange}
+                                    className={contactStyles.contactFormInput}
+                                />
+                            </label>
+                        </div>
                     </div>
                     <div className={contactStyles.formGroup}>
-                        <label>
+                        <label className={contactStyles.messageInputLabel}>
                             Message
                             <textarea
                                 name="message"
                                 value={this.state.message}
                                 onChange={this.handleInputChange}
+                                className={contactStyles.formMessageTextArea}
                             />
                         </label>
                     </div>
-                    <button type="submit">Submit</button>
+                    <Toast toastList={this.state.toastList} />
+                    <div className={contactStyles.formFooter}>
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
-                <Toast toastList={this.state.toastList} />
             </div>
             
         )
