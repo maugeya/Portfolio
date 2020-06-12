@@ -64,7 +64,7 @@ export default class Contact extends Component {
                     message: "",
                     toastList: [{
                         id: id,
-                        title: 'Error',
+                        title: 'error',
                         description: 'There was an error sending your message. Please try again later.',
                         backgroundColor: '#ffd3d3',
                         icon: ErrorIcon
