@@ -21,7 +21,15 @@ const Toast = props => {
                 }, [toastList, list])
         const transitions = useTransition(list, item => item.id, {
             from: { transform: 'translateX(120%)'},
-            enter: { transform: 'translateX(0%)'},
+            enter: { 
+                transform: 'translateX(0%)',
+                bottom: '12px',
+                right: '12px',
+                fontSize: '14px',
+                boxSizing: 'border-box',
+                maxHeight: '100px',
+                position: 'fixed'
+            },
             leave: { transform: 'translateX(120%)'},
             })
 
@@ -34,7 +42,7 @@ const Toast = props => {
         }
 
     return (
-        <div classNames={`${toastStyles.notificationContainer} ${toastStyles.bottomRight}`}>
+        <div>
             {transitions.map(({ item, props, key }) =>
                 <animated.div key={key} style={props}>
                     <div 
