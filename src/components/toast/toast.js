@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
 import toastStyles from './toast.module.css'
 import CheckIcon from '../svgIcons/checkIcon'
@@ -8,25 +8,25 @@ const Toast = props => {
         const { toastList } = props
         const [list, setList] = useState(toastList)
 
-        const deleteToast = toastId => {
+        const deleteToast = useCallback((toastId) => {
             const index = list.findIndex(toast => toast.id === toastId)
             list.splice(index, 1)
             setList([...list])
             const toastListItem = toastList.findIndex(toast => toast.id === toastId)
             toastList.splice(toastListItem, 1)
-        }
+        }, [toastList, list])
 
         useEffect(() => {
-                    setList(toastList)
-                    const interval = setInterval(() => {
-                        if (toastList.length && list.length) {
-                            deleteToast(toastList[0].id)
-                        }
-                    }, 3000)
-                    return () => {
-                        clearInterval(interval)
-                    }
-                }, [toastList, list])
+            setList(toastList)
+            const interval = setInterval(() => {
+                if (toastList.length && list.length) {
+                    deleteToast(toastList[0].id)
+                }
+            }, 3000)
+            return () => {
+                clearInterval(interval)
+            }
+        }, [toastList, list, deleteToast])
 
         const transitions = useTransition(list, item => item.id, {
             from: { transform: 'translateX(120%)'},
