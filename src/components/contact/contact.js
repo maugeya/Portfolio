@@ -75,8 +75,8 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <div id="contact">
-                <div className={contactStyles.sectionHeader}>
+            <div id="contact" className="section">
+                <div className={contactStyles.contactSectionHeader}>
                     <h2>Want to collaborate? Get in touch!</h2>
                     <p>You can contact me at info@angelamaugey.com, or fill out the form</p>
                 </div>
