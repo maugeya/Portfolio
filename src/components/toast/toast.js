@@ -8,6 +8,14 @@ const Toast = props => {
         const { toastList } = props
         const [list, setList] = useState(toastList)
 
+        const deleteToast = toastId => {
+            const index = list.findIndex(toast => toast.id === toastId)
+            list.splice(index, 1)
+            setList([...list])
+            const toastListItem = toastList.findIndex(toast => toast.id === toastId)
+            toastList.splice(toastListItem, 1)
+        }
+
         useEffect(() => {
                     setList(toastList)
                     const interval = setInterval(() => {
@@ -29,18 +37,13 @@ const Toast = props => {
                 fontSize: '14px',
                 boxSizing: 'border-box',
                 maxHeight: '100px',
-                position: 'fixed'
+                position: 'fixed',
+                // border: `2px solid ${item.borderColor}`;
             },
             leave: { transform: 'translateX(120%)'},
             })
 
-        const deleteToast = toastId => {
-            const index = list.findIndex(toast => toast.id === toastId)
-            list.splice(index, 1)
-            setList([...list])
-            const toastListItem = toastList.findIndex(toast => toast.id === toastId)
-            toastList.splice(toastListItem, 1)
-        }
+        
 
     return (
         <div>
@@ -49,7 +52,7 @@ const Toast = props => {
                     <div 
                         key={key}
                         className={`${toastStyles.toastItem} ${toastStyles.animateToast}`}
-                        style={{ backgroundColor: item.backgroundColor }}
+                        style={{ backgroundColor: item.backgroundColor, border: item.border }}
                     >
                         <button className={toastStyles.closeButton} type="button" onClick={() => deleteToast(item.id)} >
                             X

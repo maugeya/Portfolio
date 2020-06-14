@@ -52,6 +52,7 @@ export default class Contact extends Component {
                         title: 'success',
                         description: 'Your message has been sent',
                         backgroundColor: '#deffdd',
+                        border: '2px solid #85db85',
                         icon: CheckIcon
                     }]
                 }
@@ -67,6 +68,7 @@ export default class Contact extends Component {
                         title: 'error',
                         description: 'There was an error sending your message. Please try again later.',
                         backgroundColor: '#ffd3d3',
+                        border: '2px solid #ff5151',
                         icon: ErrorIcon
                     }]
                 })
