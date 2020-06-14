@@ -3,7 +3,7 @@ import aboutMeStyles from "./aboutMe.module.css"
 
 const AboutMe = () => (
     <div id="about" className={`section ${aboutMeStyles.aboutMeContainer}`}>
-        <h2 className="sectionHeader">About me</h2>
+        <h2 className="splitSectionHeader">About me</h2>
         <div className={aboutMeStyles.content}>
         <p>
             A little bit about me...I've always been interested in computers but I was a chef for 8 years before re-skilling to become a software engineer.
