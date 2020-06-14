@@ -19,7 +19,7 @@ import JqueryIcon from "../svgIcons/jqueryIcon"
 const TechExperience = () => {
     return (
         <div id="about" className={`section ${techExpStyles.techContainer}`}>
-        <h2 className="sectionHeader">Tech experience</h2>
+        <h2 className="splitSectionHeader">Tech experience</h2>
         <div className={techExpStyles.techIconContainer}>
             <HtmlIcon />
             <CssIcon />
