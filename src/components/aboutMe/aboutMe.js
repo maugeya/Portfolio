@@ -1,5 +1,5 @@
-import React from "react"
-import aboutMeStyles from "./aboutMe.module.css"
+import React from 'react'
+import aboutMeStyles from './aboutMe.module.css'
 
 const AboutMe = () => (
     <div id="about" className={`section ${aboutMeStyles.aboutMeContainer}`}>
@@ -11,7 +11,7 @@ const AboutMe = () => (
         </p>
         <p>
             I love the problem solving element to my role and the chance to be continually learning new skills and putting them into practise.
-            I keep the end user in mind when working and add meaning input as to what I feel could help the product across teams.
+            I keep the end user in mind when working and add meaningful input as to what I feel could help the product across teams.
         </p>
         <p>
             I believe in intuitive websites, making it easy for the end user to get the most out of a site and have a passion for building simple yet stylish products.
