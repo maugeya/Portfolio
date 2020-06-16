@@ -1,5 +1,12 @@
 .jumboContainer {
     display: flex;
+    position: relative;
+}
+
+.socialIconContainer {
+    left: 100%;
+    margin-left: 20px;
+    position: absolute;
 }
 
 .jumboText {

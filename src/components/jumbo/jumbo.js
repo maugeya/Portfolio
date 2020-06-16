@@ -1,6 +1,8 @@
-import React from "react"
-import jumboStyles from "./jumbo.module.css"
-import HeroImg from "./heroImg"
+import React from 'react'
+import jumboStyles from './jumbo.module.css'
+import HeroImg from './heroImg'
+import GitHubIcon from '../svgIcons/gitHubIcon'
+import LinkedInIcon from '../svgIcons/linkedInIcon'
 
 const Jumbo = () => (
     <div id="jumbo" className="section">
@@ -11,6 +13,10 @@ const Jumbo = () => (
           <div className={jumboStyles.angeImageContainer}>
             <HeroImg />
           </div>
+          <div className={jumboStyles.socialIconContainer}>
+            <GitHubIcon />
+            <LinkedInIcon />
+            </div>
         </div>
     </div>
 )
