@@ -121,7 +121,7 @@ export default class Contact extends Component {
                             </label>
                         </div>
                     </div>
-                    <div className={contactStyles.formGroup}>
+                    <div className={contactStyles.contactMessage}>
                         <label className={contactStyles.messageInputLabel}>
                             Message
                             <textarea
@@ -134,7 +134,7 @@ export default class Contact extends Component {
                     </div>
                     <Toast toastList={this.state.toastList} />
                     <div className={contactStyles.formFooter}>
-                        <button type="submit">Submit</button>
+                        <button type="submit" className={contactStyles.contactSubmitButton}>Submit</button>
                     </div>
                 </form>
             </div>
