@@ -1,7 +1,7 @@
-import React, { useState } from "react"
-import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import burgerStyles from "./burger.module.css"
+import React, { useState } from 'react'
+import { Link } from 'gatsby'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import burgerStyles from './burger.module.css'
 
 const HamburgerMenu = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false)

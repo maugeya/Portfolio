@@ -1,7 +1,7 @@
-import React from "react"
-import styles from "./techIcon.module.css"
-import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
+import React from 'react'
+import styles from './techIcon.module.css'
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css'
 
 const JqueryIcon = () => {
     return (

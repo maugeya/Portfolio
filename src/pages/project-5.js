@@ -1,6 +1,6 @@
-import React from "react"
-import Layout from "../components/layout/layout"
-import Navbar from "../components/navbar/navbar"
+import React from 'react'
+import Layout from '../components/layout/layout'
+import Navbar from '../components/navbar/navbar'
 
 export default function ProjectFive() {
   return (
