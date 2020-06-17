@@ -3,7 +3,7 @@ import styles from './techIcon.module.css'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 
-const GitHubIcon = () => {
+const GitIcon = () => {
     return (
         <div className={styles.iconContainer}>
             <Tippy content="Git">
@@ -16,4 +16,4 @@ const GitHubIcon = () => {
     )
 }
 
-export default GitHubIcon
+export default GitIcon
