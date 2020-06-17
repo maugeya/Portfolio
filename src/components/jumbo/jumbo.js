@@ -1,7 +1,7 @@
 import React from 'react'
 import jumboStyles from './jumbo.module.css'
 import HeroImg from './heroImg'
-import GitHubIcon from '../svgIcons/gitHubIcon'
+import GitHubSocialIcon from '../svgIcons/gitHubSocialIcon'
 import LinkedInIcon from '../svgIcons/linkedInIcon'
 
 const Jumbo = () => (
@@ -14,7 +14,7 @@ const Jumbo = () => (
             <HeroImg />
           </div>
           <div className={jumboStyles.socialIconContainer}>
-            <GitHubIcon />
+            <GitHubSocialIcon />
             <LinkedInIcon />
             </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './socialIcon.module.css'
 
-const GitHubIcon = () => {
+const GitHubSocialIcon = () => {
     return (
         <div className={styles.iconContainer}>
             <a href="https://github.com/maugeya" target="_blank">
@@ -14,4 +14,4 @@ const GitHubIcon = () => {
     )
 }
 
-export default GitHubIcon
+export default GitHubSocialIcon
